@@ -1,2 +1,11 @@
 @import "~@fortawesome/fontawesome-free/css/all.css";
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+.cart-widget {
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ display: flex;
+ align-items: center;
+}

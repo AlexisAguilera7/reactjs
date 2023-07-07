@@ -8,8 +8,9 @@ const App = () => {
   return (
     <div>
       <NavBar />
-      <ItemList greeting="¡Hola! Bienvenido a nuestra tienda." />
       <CartWidget />
+      <ItemList greeting="¡Hola! Bienvenido a nuestra tienda." />
+
     </div>
   );
 };
