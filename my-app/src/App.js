@@ -1,24 +1,17 @@
+import React from 'react';
+import NavBar from '../src/componentes /NavBar';
+import ItemList from '../src/componentes /ItemList';
+import CartWidget from '../src/componentes /CartWidget';
 
-import './App.css';
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar />
+      <ItemList greeting="¡Hola! Bienvenido a nuestra tienda." />
+      <CartWidget />
     </div>
   );
-}
+};
 
 export default App;
+
