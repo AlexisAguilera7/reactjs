@@ -3,9 +3,17 @@
 
 
 .cart-widget {
+ font-size: 5vh;
  position: absolute;
  top: 10px;
  right: 10px;
  display: flex;
  align-items: center;
+ color: antiquewhite;
+}
+
+.titulo {
+ font-size: 10vh;
+ color: antiquewhite;
+ background-color: darkblue;
 }
