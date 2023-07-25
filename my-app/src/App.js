@@ -1,6 +1,6 @@
 
 import NavBar from '../src/componentes /NavBar';
-import ItemList from '../src/componentes /ItemList';
+import ItemListContainer from '../src/componentes /ItemlistContainer';
 
 import './index.css';
 
@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div>
       <NavBar />
-      <ItemList greeting="¡Hola! Bienvenido a nuestra tienda." />
+      <ItemListContainer greeting="¡Hola! Bienvenido a nuestra tienda." />
 
     </div>
   );
