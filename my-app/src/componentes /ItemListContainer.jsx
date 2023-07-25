@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import ItemCount from '../componentes/ItemCount';
-import { useEffect } from 'react';
 import IemList from '../componentes /ItemList';
 
 const ItemListContainer = ({ greeting }) => {
