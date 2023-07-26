@@ -1,32 +1,33 @@
 import React, { useState } from "react";
+import { Button } from 'react-bootstrap';
 
-const ItemCount = (stock, onAdd, initial) => {
- const [count, setCount] = useState(initial)
+const ItemCount = ({ stock, onAdd, initial }) => {
+ const [count, setCount] = useState(initial);
+
  const suma = () => {
   if (count < stock) {
-   setCount(count + 1)
+   setCount(count + 1);
   }
+ };
 
- }
  const resta = () => {
   if (count > 0) {
-   setCount(count - 1)
+   setCount(count - 1);
   }
- }
- return (
+ };
 
+ return (
   <div>
    <div>
-    <button onClick={resta}>-</button>
+    <Button onClick={resta}>-</Button>
     <span>{count}</span>
-    <button onClick={suma}>+</button>
+    <Button onClick={suma}>+</Button>
    </div>
-   <button disable={count === 0} onClick={() => onAdd(count)}>Agregar al carrito</button>
+   <Button disabled={count === 0} onClick={() => onAdd(count)}>
+    Agregar al carrito
+   </Button>
   </div>
- )
-}
+ );
+};
 
-
-
-
-export default ItemCount
+export default ItemCount;
