@@ -7,10 +7,10 @@ const NavBar = () => {
   <nav>
    <div className="titulo">Allbasketuy<i className="fa fa-basketball"></i></div>
    <ul className="categories">
-    <li><p><a className="link-opacity-75-hover" as={NavLink} to='/category/Camisetas'>Camisetas</a></p></li>
-    <li><p><a className="link-opacity-75-hover" as={NavLink} to='/category/Pelotas'>Pelotas</a></p></li>
-    <li><p><a className="link-opacity-75-hover" as={NavLink} to='/category/Zapatillas'>Zapatillas</a></p></li>
-    <li><p><a className="link-opacity-75-hover" as={NavLink} to='/category/Tableros'>Tableros</a></p></li>
+    <li><p><NavLink className="link-opacity-75-hover" to='/category/Camisetas'>Camisetas</NavLink></p></li>
+    <li><p><NavLink className="link-opacity-75-hover" to='/category/Pelotas'>Pelotas</NavLink></p></li>
+    <li><p><NavLink className="link-opacity-75-hover" to='/category/Zapatillas'>Zapatillas</NavLink></p></li>
+    <li><p><NavLink className="link-opacity-75-hover" to='/category/Tableros'>Tableros</NavLink></p></li>
    </ul>
    <CartWidget />
   </nav>

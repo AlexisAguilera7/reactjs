@@ -16,7 +16,7 @@ const ItemDetailContainer = () => {
    .then((res) => setProducto(res))
    .catch((error) => console.log(error))
    .finally(() => setLoading(false))
- }, [])
+ }, [id])
  return (
   < div >
    {loading ? <p>Cargando...</p> : <ItemDetail producto={producto} />}
