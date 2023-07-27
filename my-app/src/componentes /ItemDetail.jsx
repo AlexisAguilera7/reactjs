@@ -17,7 +17,7 @@ const ItemDetail = ({ producto }) => {
      <Card.Text>
       {producto.description}
      </Card.Text>
-     <Card.Text>${producto.price}</Card.Text>
+     <Card.Text>${producto.precio}</Card.Text>
     </Card.Body>
     <h3>{producto.name}</h3>
     <ItemCount initial={1} stock={producto.stock} onAdd={onAdd} />

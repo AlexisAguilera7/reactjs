@@ -11,7 +11,7 @@ const Item = ({ prod }) => {
     <Card.Text>
      {prod.description}
     </Card.Text>
-    <Card.Text>${prod.price}</Card.Text>
+    <Card.Text>${prod.precio}</Card.Text>
     <Button as={Link} to={`/item/${prod.id}`} variant="primary">Ver mas</Button>
    </Card.Body>
   </Card>
