@@ -23,7 +23,7 @@ const ItemDetail = ({ producto }) => {
     <ItemCount initial={1} stock={producto.stock} onAdd={onAdd} />
    </Card>
 
-  </div>
+  </div >
  )
 }
 

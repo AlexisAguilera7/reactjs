@@ -17,8 +17,8 @@ const ItemCount = ({ stock, onAdd, initial }) => {
  };
 
  return (
-  <div>
-   <div>
+  <div className="d-flex-column aling-items-center">
+   <div >
     <Button onClick={resta}>-</Button>
     <span>{count}</span>
     <Button onClick={suma}>+</Button>
