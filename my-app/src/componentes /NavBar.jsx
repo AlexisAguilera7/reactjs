@@ -13,7 +13,9 @@ const NavBar = () => {
     <li><p><NavLink className="link-opacity-75-hover" to='/category/Zapatillas'>Zapatillas</NavLink></p></li>
     <li><p><NavLink className="link-opacity-75-hover" to='/category/Tableros'>Tableros</NavLink></p></li>
    </ul>
-   <CartWidget />
+   <NavLink to="/cart">
+    <CartWidget />
+   </NavLink>
   </nav>
  );
 };

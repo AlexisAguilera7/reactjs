@@ -1,12 +1,16 @@
-import React from "react";
-import ItemCount from "./ItemCount";
+import React, { useState } from "react";
 import { Card } from "react-bootstrap";
+import Description from "./ItemDetail/Description";
+import ItemQuantitySelector from "./ItemDetail/ItemQuantitySelector";
+import { AddItemButton } from "./ItemDetail/AddItemButton";
+import { useCart } from "../context/CartContext";
 
 const ItemDetail = ({ producto }) => {
+ const { addItem } = useCart()
  const onAdd = (cantidad) => {
-  console.log(`compraste ${cantidad}`)
-
+  addItem(producto, cantidad)
  }
+ const [cantidad, setCantidad] = useState(1)
 
  return (
   <div>
@@ -15,11 +19,12 @@ const ItemDetail = ({ producto }) => {
     <Card.Body>
      <Card.Title>{producto.name}</Card.Title>
      <Card.Text>
-      {producto.description}
+      <Description description={producto.description} />
      </Card.Text>
      <Card.Text>${producto.precio}</Card.Text>
     </Card.Body>
-    <ItemCount initial={1} stock={producto.stock} onAdd={onAdd} />
+    <ItemQuantitySelector stock={producto.stock} cantidad={cantidad} setCantidad={setCantidad} />
+    <AddItemButton cantidad={cantidad} onAdd={onAdd} />
    </Card>
 
   </div >
