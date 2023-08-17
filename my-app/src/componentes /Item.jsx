@@ -8,9 +8,6 @@ const Item = ({ prod }) => {
    <Card.Img variant="top" src={prod.img} />
    <Card.Body>
     <Card.Title>{prod.name}</Card.Title>
-    <Card.Text>
-     {prod.description}
-    </Card.Text>
     <Card.Text>${prod.precio}</Card.Text>
     <Button as={Link} to={`/item/${prod.id}`} variant="primary">Ver mas</Button>
    </Card.Body>

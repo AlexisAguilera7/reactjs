@@ -23,7 +23,7 @@ export const CartProvider = ({ children }) => {
   setCartItem(cartItem.filter(product => product.id !== item.id))
  }
  return (
-  <cartContext.Provider value={{ cartItem, addItem, removeItem }}>
+  <cartContext.Provider value={{ cartItem, addItem, removeItem, setCartItem }}>
    {children}
   </cartContext.Provider >
 

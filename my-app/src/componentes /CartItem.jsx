@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Col, Collapse, Image, ListGroupItem, Row } from 'react-bootstrap'
+import { Button, Col, Image, ListGroupItem, Row } from 'react-bootstrap'
 import { useCart } from '../context/CartContext'
 
 const CartItem = ({ producto }) => {
