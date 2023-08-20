@@ -25,4 +25,5 @@ HTML y CSS: Lenguajes fundamentales para la estructura y el estilo de la aplicac
 
 ## link al proyecto
 
-Puedes explorar el proyecto en funcionamiento accediendo al siguiente enlace: Nombre del Proyecto en GitHub
+Puedes explorar el proyecto en funcionamiento accediendo al siguiente enlace: Nombre del Proyecto en GitHub https://github.com/AlexisAguilera7/reactjs
+Ademas adjunto el link de un video en drive en el cual se encuentra un breve recorrido y funcionamiento de la app https://drive.google.com/file/d/1dZ8oPH2uqbIgp7XiN7iF4l_hl4tQzv2F/view?usp=drive_link
